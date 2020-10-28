@@ -1,0 +1,141 @@
+2020-09-08 21:45:15.113  INFO 776 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2020-09-08 21:45:16.535  INFO 776 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2020-09-08 21:45:16.535  WARN 776 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/adtf/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-09-08 21:45:16.535  INFO 776 --- [main] com.yonyougov.adtf.web.AdtfStart         : No active profile set, falling back to default profiles: default
+2020-09-08 21:45:20.831  INFO 776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-08 21:45:20.847  INFO 776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-08 21:45:20.925  INFO 776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2020-09-08 21:45:21.550  INFO 776 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8ea6f0e5-be34-310c-aef8-7a8223863f4f
+2020-09-08 21:45:22.113  INFO 776 --- [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2020-09-08 21:45:22.144  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+2020-09-08 21:45:22.144  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource commandLineArgs [org.springframework.core.env.SimpleCommandLinePropertySource] to EncryptableEnumerablePropertySourceWrapper
+2020-09-08 21:45:22.144  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-08 21:45:22.144  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+2020-09-08 21:45:22.144  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-08 21:45:22.144  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2020-09-08 21:45:22.144  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2020-09-08 21:45:22.160  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-08 21:45:22.160  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [file:E:/cwy8.20/config/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-08 21:45:22.160  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-08 21:45:22.160  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [classpath:/config/application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-08 21:45:22.160  INFO 776 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2020-09-08 21:45:22.238  INFO 776 --- [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2020-09-08 21:45:22.300  INFO 776 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-08 21:45:23.129  INFO 776 --- [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2020-09-08 21:45:23.129  INFO 776 --- [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2020-09-08 21:45:23.519  INFO 776 --- [main] org.eclipse.jetty.util.log               : Logging initialized @12498ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-09-08 21:45:23.800  INFO 776 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 9009
+2020-09-08 21:45:23.816  INFO 776 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.26.v20200117; built: 2020-01-17T12:35:33.676Z; git: 7b38981d25d14afb4a12ff1f2596756144edf695; jvm 1.8.0_181-b13
+2020-09-08 21:45:23.878  INFO 776 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2020-09-08 21:45:23.878  INFO 776 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7281 ms
+2020-09-08 21:45:24.191  WARN 776 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-08 21:45:24.191  INFO 776 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-08 21:45:24.253  INFO 776 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4ce7fffa
+2020-09-08 21:45:25.613  INFO 776 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-08 21:45:26.206  INFO 776 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-08 21:45:27.379 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.ministry.AdtfMinistryDetailMapper.listMaps] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:27.488 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.match.AdtfProvinceMatchBillMapper.getMatchBillFirst] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:27.503 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.match.AdtfProvinceMatchBillMapper.updateStatusById] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:27.816 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.releaseuse.AdtfReleaseUseBillMapper.updateStatusById] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:27.832 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.releaseuse.AdtfReleaseUseBillMapper.listTargetCode] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:27.956 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.release.AdtfProvinceReleaseMatchInfoMapper.updateStatusById] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:28.410 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.release.AdtfProvinceReleaseBillMapper.updateStatusById] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:28.410 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.release.AdtfProvinceReleaseBillMapper.getStaticIndex] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:28.566 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.releaseinplace.AdtfReleaseInplaceBillMapper.updateStatusById] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:28.707 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.ministry.AdtfMinistryBillMapper.getMininstryBillFirst] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:28.707 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.ministry.AdtfMinistryBillMapper.listMaps] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:28.707 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.ministry.AdtfMinistryBillMapper.updateStatusById] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:28.863 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.release.AdtfProvinceReleaseDetailTempMapper.getSumByOrgCode] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:29.160 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.releaseconfirm.AdtfReleaseConfirmBillMapper.updateStatusById] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:29.300 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.releaseuse.AdtfReleaseUseDetailMapper.listSubjectByLevelNum] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:29.300 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.releaseuse.AdtfReleaseUseDetailMapper.listTargetGroup] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:29.300 ERROR 776 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.yonyougov.adtf.repository.releaseuse.AdtfReleaseUseDetailMapper.listTargetMoney] is ignored, because it exists, maybe from xml file
+2020-09-08 21:45:32.097  INFO 776 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2020-09-08 21:45:32.097  INFO 776 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2020-09-08 21:45:32.113  INFO 776 --- [main] org.eclipse.jetty.server.session         : node0 Scavenging every 600000ms
+2020-09-08 21:45:32.128  INFO 776 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@8ab78bc{application,/adtf,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.4898840647599504011.9009/, jar:file:/E:/cwy8.20/product/module/A/ADTF/adtf-8.5-SNAPSHOT.jar!/BOOT-INF/lib/springfox-swagger-ui-2.9.2.jar!/META-INF/resources],AVAILABLE}
+2020-09-08 21:45:32.144  INFO 776 --- [main] org.eclipse.jetty.server.Server          : Started @21118ms
+2020-09-08 21:45:32.316  INFO 776 --- [main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-09-08 21:45:32.331  WARN 776 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-09-08 21:45:32.347  INFO 776 --- [main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-09-08 21:45:32.347  INFO 776 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-09-08 21:45:32.347  INFO 776 --- [main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-09-08 21:45:32.363  INFO 776 --- [main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-09-08 21:45:32.379 DEBUG 776 --- [main] c.y.a.c.util.ApplicationContextRegister  : ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@26a7b76d, started on Tue Sep 08 21:45:16 CST 2020, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1e643faf
+2020-09-08 21:45:33.003 DEBUG 776 --- [main] c.y.a.i.r.W.addWorkerNode                : ==>  Preparing: INSERT INTO APSL_WORKER_NODE (HOST_NAME, PORT, TYPE, LAUNCH_DATE, MODIFIED, CREATED) VALUES ( ?, ?, ?, ?, NOW(), NOW()) 
+2020-09-08 21:45:33.050 DEBUG 776 --- [main] c.y.a.i.r.W.addWorkerNode                : ==> Parameters: 10.16.23.3(String), 1599572732957-90903(String), 2(Integer), 2020-09-08 21:45:32.894(Timestamp)
+2020-09-08 21:45:33.066 DEBUG 776 --- [main] c.y.a.i.r.W.addWorkerNode                : <==    Updates: 1
+2020-09-08 21:45:33.113  INFO 776 --- [main] c.b.f.u.w.DisposableWorkerIdAssigner     : Add worker node:WorkerNodeEntity[id=4674,hostName=10.16.23.3,port=1599572732957-90903,type=2,launchDate=Tue Sep 08 21:45:32 CST 2020,created=<null>,modified=<null>]
+2020-09-08 21:45:33.129  INFO 776 --- [main] c.b.fsg.uid.impl.DefaultUidGenerator     : Initialized bits(1, 29, 21, 13) for workerID:4674
+2020-09-08 21:45:33.129  INFO 776 --- [main] c.baidu.fsg.uid.impl.CachedUidGenerator  : Initialized ring buffer size:65536, paddingFactor:50
+2020-09-08 21:45:33.144  INFO 776 --- [main] c.baidu.fsg.uid.impl.CachedUidGenerator  : Initialized BufferPaddingExecutor. Using schdule:false, interval:null
+2020-09-08 21:45:33.144  INFO 776 --- [main] com.baidu.fsg.uid.buffer.RingBuffer      : Ready to padding buffer lastSecond:1599572733. RingBuffer [bufferSize=65536, tail=-1, cursor=-1, paddingThreshold=32768]
+2020-09-08 21:45:33.175  WARN 776 --- [main] com.baidu.fsg.uid.buffer.RingBuffer      : Rejected putting buffer for uid:10251949534887936. RingBuffer [bufferSize=65536, tail=65535, cursor=-1, paddingThreshold=32768]
+2020-09-08 21:45:33.175  INFO 776 --- [main] com.baidu.fsg.uid.buffer.RingBuffer      : End to padding buffer lastSecond:1599572742. RingBuffer [bufferSize=65536, tail=65535, cursor=-1, paddingThreshold=32768]
+2020-09-08 21:45:33.175  INFO 776 --- [main] c.baidu.fsg.uid.impl.CachedUidGenerator  : Initialized RingBuffer successfully.
+2020-09-08 21:45:33.238  INFO 776 --- [main] o.s.m.nosql.redis.pool.JedisPoolBuilder  : Building JedisDirectPool, on redis server 10.16.23.21:6379
+2020-09-08 21:45:34.222  WARN 776 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.yonyougov.apsl.sys.entity.MaEleDepartment".
+2020-09-08 21:45:35.769  INFO 776 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-08 21:45:35.863  INFO 776 --- [main] com.yonyou.iuap.lock.zkpool.ZkPool       : init iuap zklock rootpath success!
+2020-09-08 21:45:35.878  INFO 776 --- [main] com.yonyou.iuap.lock.zkpool.ZkPool       : active num is 0
+2020-09-08 21:45:35.910  INFO 776 --- [main] c.y.u.b.g.BillCodeGeneratorOnSingle      : 从redis获取BILL_CODE_GENERATOR为SINGLE##-13331190-ffdb-4094-9536-8100d1e88d9d-10.16.23.3，将使用已存在的编码服务。
+2020-09-08 21:45:39.925  INFO 776 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-08 21:45:40.332  INFO 776 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-09-08 21:45:40.332  INFO 776 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-09-08 21:45:40.816  INFO 776 --- [main] lConfig$$EnhancerBySpringCGLIB$$814f28b1 : Home--------------- E:\cwy8.20\product\module\A\ADTF
+2020-09-08 21:45:40.816  INFO 776 --- [main] lConfig$$EnhancerBySpringCGLIB$$814f28b1 : 主包AbsolutePath--------------- E:\cwy8.20\product\module\A\ADTF\adtf-8.5-SNAPSHOT.jar
+2020-09-08 21:45:40.831  INFO 776 --- [main] c.y.a.common.installsql.AutoInstallSQL   : ------**************************SQL script init******************************-------
+2020-09-08 21:45:40.831  INFO 776 --- [main] c.y.a.common.installsql.AutoInstallSQL   : ######1、依赖检查######
+2020-09-08 21:45:40.847  INFO 776 --- [main] c.y.a.c.installsql.InstallSqlHandler     : dbType:mysql
+2020-09-08 21:45:40.847  INFO 776 --- [main] c.y.a.c.installsql.InstallSqlHandler     : mysql自动执行脚本升级
+2020-09-08 21:45:40.847  INFO 776 --- [main] c.y.a.c.installsql.InstallSqlHandler     : ------------mysql盘符为----------\\
+2020-09-08 21:45:41.300  INFO 776 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/swagger] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-08 21:45:41.316  WARN 776 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-08 21:45:41.316  INFO 776 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-08 21:45:42.347  WARN 776 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-09-08 21:45:42.566  INFO 776 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-08 21:45:42.707  INFO 776 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-08 21:45:42.816  INFO 776 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-08 21:45:43.316  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addAdvanceUsingPOST_1
+2020-09-08 21:45:43.316  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addFormalUsingPOST_1
+2020-09-08 21:45:43.316  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getListUsingGET_1
+2020-09-08 21:45:43.332  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVoByIdUsingGET_1
+2020-09-08 21:45:43.332  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeByIdsUsingPOST_1
+2020-09-08 21:45:43.363  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2020-09-08 21:45:43.378  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: tempSaveUsingPOST_1
+2020-09-08 21:45:43.378  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addAdvanceUsingPOST_2
+2020-09-08 21:45:43.394  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addFormalUsingPOST_2
+2020-09-08 21:45:43.394  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getListUsingGET_2
+2020-09-08 21:45:43.410  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVoByIdUsingGET_2
+2020-09-08 21:45:43.441  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeByIdsUsingPOST_2
+2020-09-08 21:45:43.503  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_2
+2020-09-08 21:45:43.503  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: tempSaveUsingPOST_2
+2020-09-08 21:45:43.519  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addAdvanceUsingPOST_3
+2020-09-08 21:45:43.519  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addFormalUsingPOST_3
+2020-09-08 21:45:43.519  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addGuiUsingPOST_1
+2020-09-08 21:45:43.535  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDocNoUsingGET_1
+2020-09-08 21:45:43.535  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getListUsingGET_3
+2020-09-08 21:45:43.550  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVoByIdUsingGET_3
+2020-09-08 21:45:43.550  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeByIdsUsingPOST_3
+2020-09-08 21:45:43.566  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_3
+2020-09-08 21:45:43.566  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: tempSaveUsingPOST_3
+2020-09-08 21:45:43.582  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addAdvanceUsingPOST_4
+2020-09-08 21:45:43.582  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addFormalUsingPOST_4
+2020-09-08 21:45:43.582  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getListUsingGET_4
+2020-09-08 21:45:43.628  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVoByIdUsingGET_4
+2020-09-08 21:45:43.628  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeByIdsUsingPOST_4
+2020-09-08 21:45:43.660  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_4
+2020-09-08 21:45:43.675  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: tempSaveUsingPOST_4
+2020-09-08 21:45:43.691  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getListUsingGET_5
+2020-09-08 21:45:43.691  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVoByIdUsingGET_5
+2020-09-08 21:45:43.707  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeByIdsUsingPOST_5
+2020-09-08 21:45:43.707  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_5
+2020-09-08 21:45:43.722  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: tempSaveUsingPOST_5
+2020-09-08 21:45:43.722  INFO 776 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getListUsingGET_6
+2020-09-08 21:45:44.331  INFO 776 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-09-08 21:45:44.378  INFO 776 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-08 21:45:44.378  INFO 776 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-08 21:45:44.394  INFO 776 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-08 21:45:44.425  INFO 776 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@4426bff1{HTTP/1.1,[http/1.1]}{0.0.0.0:9009}
+2020-09-08 21:45:44.425  INFO 776 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 9009 (http/1.1) with context path '/adtf'
+2020-09-08 21:45:44.488  INFO 776 --- [main] com.yonyougov.adtf.web.AdtfStart         : Started AdtfStart in 32.276 seconds (JVM running for 33.469)
