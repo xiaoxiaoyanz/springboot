@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+=======
+  <component name="Encoding">
+>>>>>>> 8ff77cf1d054ba60f18fb17999d5ed90368edfe9
     <file url="file://$PROJECT_DIR$/springboot01/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot02/src/main/java" charset="UTF-8" />
   </component>

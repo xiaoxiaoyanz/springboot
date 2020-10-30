@@ -2,5 +2,12 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
+<<<<<<< HEAD
 /../../../../:\springboot20201027\springboot\.idea/dataSources/
 /dataSources.local.xml
+=======
+/../../../../../:\Users\wucc\springboot\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+>>>>>>> 8ff77cf1d054ba60f18fb17999d5ed90368edfe9

@@ -1,0 +1,45 @@
+2020-10-29 08:53:09.520 WARN [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.handleListenerSetupFailure:895 -Setup of JMS message listener invoker failed for destination 'video.topic' - trying to recover. Cause: The Consumer is closed
+2020-10-29 08:53:09.563 WARN [DefaultMessageListenerContainer-2]org.apache.activemq.jms.pool.PooledSession.close:121 -Caught exception trying rollback() when putting session back into the pool, will invalidate. javax.jms.IllegalStateException: The Session is closed
+javax.jms.IllegalStateException: The Session is closed
+	at org.apache.activemq.ActiveMQSession.checkClosed(ActiveMQSession.java:771)
+	at org.apache.activemq.ActiveMQSession.rollback(ActiveMQSession.java:596)
+	at org.apache.activemq.jms.pool.PooledSession.close(PooledSession.java:118)
+	at org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:109)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1241)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1087)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 08:53:09.567 INFO [ActiveMQ Connection Executor: tcp:///47.97.215.99:61616@7993]org.apache.activemq.jms.pool.PooledConnectionFactory.onException:115 -Expiring connection ActiveMQConnection {id=ID:DESKTOP-QS6P9HL-9935-1603805188935-1:9,clientId=ID:DESKTOP-QS6P9HL-9935-1603805188935-0:9,started=false} on IOException: Software caused connection abort: recv failed
+2020-10-29 08:53:09.670 WARN [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.handleListenerSetupFailure:895 -Setup of JMS message listener invoker failed for destination 'order.queue' - trying to recover. Cause: The Consumer is closed
+2020-10-29 08:53:09.569 WARN [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.handleListenerSetupFailure:895 -Setup of JMS message listener invoker failed for destination 'video.topic' - trying to recover. Cause: The Session is closed
+2020-10-29 08:53:09.572 INFO [ActiveMQ Connection Executor: tcp:///47.97.215.99:61616@7995]org.apache.activemq.jms.pool.PooledConnectionFactory.onException:115 -Expiring connection ActiveMQConnection {id=ID:DESKTOP-QS6P9HL-9935-1603805188935-1:11,clientId=ID:DESKTOP-QS6P9HL-9935-1603805188935-0:11,started=false} on IOException: Unrecognized Windows Sockets error: 0: recv failed
+2020-10-29 08:53:09.573 INFO [ActiveMQ Connection Executor: tcp:///47.97.215.99:61616@7994]org.apache.activemq.jms.pool.PooledConnectionFactory.onException:115 -Expiring connection ActiveMQConnection {id=ID:DESKTOP-QS6P9HL-9935-1603805188935-1:10,clientId=ID:DESKTOP-QS6P9HL-9935-1603805188935-0:10,started=false} on IOException: Software caused connection abort: recv failed
+2020-10-29 08:53:09.573 WARN [DefaultMessageListenerContainer-2]org.apache.activemq.jms.pool.PooledSession.close:121 -Caught exception trying rollback() when putting session back into the pool, will invalidate. javax.jms.IllegalStateException: The Session is closed
+javax.jms.IllegalStateException: The Session is closed
+	at org.apache.activemq.ActiveMQSession.checkClosed(ActiveMQSession.java:771)
+	at org.apache.activemq.ActiveMQSession.rollback(ActiveMQSession.java:596)
+	at org.apache.activemq.jms.pool.PooledSession.close(PooledSession.java:118)
+	at org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:109)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1241)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1087)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 08:53:09.675 WARN [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.handleListenerSetupFailure:895 -Setup of JMS message listener invoker failed for destination 'common.queue' - trying to recover. Cause: The Session is closed
+2020-10-29 08:53:09.573 WARN [DefaultMessageListenerContainer-2]org.apache.activemq.jms.pool.PooledSession.close:121 -Caught exception trying rollback() when putting session back into the pool, will invalidate. javax.jms.IllegalStateException: The Session is closed
+javax.jms.IllegalStateException: The Session is closed
+	at org.apache.activemq.ActiveMQSession.checkClosed(ActiveMQSession.java:771)
+	at org.apache.activemq.ActiveMQSession.rollback(ActiveMQSession.java:596)
+	at org.apache.activemq.jms.pool.PooledSession.close(PooledSession.java:118)
+	at org.springframework.jms.support.JmsUtils.closeSession(JmsUtils.java:109)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.clearResources(DefaultMessageListenerContainer.java:1241)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1087)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 08:53:09.682 WARN [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.handleListenerSetupFailure:895 -Setup of JMS message listener invoker failed for destination 'common.queue' - trying to recover. Cause: The Session is closed
+2020-10-29 08:53:09.578 WARN [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.handleListenerSetupFailure:895 -Setup of JMS message listener invoker failed for destination 'video.topic' - trying to recover. Cause: The Session is closed
+2020-10-29 08:53:09.601 INFO [ActiveMQ Connection Executor: tcp:///47.97.215.99:61616@7996]org.apache.activemq.jms.pool.PooledConnectionFactory.onException:115 -Expiring connection ActiveMQConnection {id=ID:DESKTOP-QS6P9HL-9935-1603805188935-1:12,clientId=ID:DESKTOP-QS6P9HL-9935-1603805188935-0:12,started=false} on IOException: Unrecognized Windows Sockets error: 0: recv failed
+2020-10-29 08:53:09.602 INFO [ActiveMQ Connection Executor: tcp:///47.97.215.99:61616@7989]org.apache.activemq.jms.pool.PooledConnectionFactory.onException:115 -Expiring connection ActiveMQConnection {id=ID:DESKTOP-QS6P9HL-9935-1603805188935-1:7,clientId=ID:DESKTOP-QS6P9HL-9935-1603805188935-0:7,started=false} on IOException: Software caused connection abort: recv failed
+2020-10-29 08:53:09.604 INFO [ActiveMQ Connection Executor: tcp:///47.97.215.99:61616@7992]org.apache.activemq.jms.pool.PooledConnectionFactory.onException:115 -Expiring connection ActiveMQConnection {id=ID:DESKTOP-QS6P9HL-9935-1603805188935-1:8,clientId=ID:DESKTOP-QS6P9HL-9935-1603805188935-0:8,started=false} on IOException: Software caused connection abort: recv failed
+2020-10-29 08:53:09.846 INFO [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful:946 -Successfully refreshed JMS Connection
+2020-10-29 08:53:09.846 INFO [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful:946 -Successfully refreshed JMS Connection
+2020-10-29 08:53:09.871 INFO [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful:946 -Successfully refreshed JMS Connection
+2020-10-29 08:53:09.920 INFO [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful:946 -Successfully refreshed JMS Connection
+2020-10-29 08:53:09.965 INFO [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful:946 -Successfully refreshed JMS Connection
+2020-10-29 08:53:10.013 INFO [DefaultMessageListenerContainer-2]o.s.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful:946 -Successfully refreshed JMS Connection

@@ -5,8 +5,18 @@
       <list>
         <option value="$PROJECT_DIR$/springboot01/pom.xml" />
         <option value="$PROJECT_DIR$/springboot02/pom.xml" />
+<<<<<<< HEAD
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK" />
+=======
+        <option value="$PROJECT_DIR$/netty/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+>>>>>>> 8ff77cf1d054ba60f18fb17999d5ed90368edfe9
 </project>
