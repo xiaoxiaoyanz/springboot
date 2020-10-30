@@ -2,7 +2,6 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
-<<<<<<< HEAD
       <option name="id" value="myRepository2_3" />
       <option name="name" value="myRepository2_3" />
       <option name="url" value="http://maven.ufgov.com.cn/nexus/content/repositories/gfmis/" />
@@ -26,11 +25,6 @@
       <option name="id" value="myRepository2_2" />
       <option name="name" value="myRepository2_2" />
       <option name="url" value="http://maven.ufgov.com.cn/nexus/content/repositories/cw80/" />
-=======
-      <option name="id" value="central" />
-      <option name="name" value="Central Repository" />
-      <option name="url" value="https://repo.maven.apache.org/maven2" />
->>>>>>> 8ff77cf1d054ba60f18fb17999d5ed90368edfe9
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -38,7 +32,6 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
-<<<<<<< HEAD
       <option name="id" value="iUAP-Snapshots" />
       <option name="name" value="iUAP-Snapshots" />
       <option name="url" value="http://maven.yonyou.com/nexus/repository/iUAP-Snapshots/" />
@@ -79,14 +72,11 @@
       <option name="url" value="http://maven.yonyou.com/nexus/repository/snapshots/" />
     </remote-repository>
     <remote-repository>
-=======
->>>>>>> 8ff77cf1d054ba60f18fb17999d5ed90368edfe9
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
-<<<<<<< HEAD
       <option name="id" value="myRepository2_5" />
       <option name="name" value="myRepository2_5" />
       <option name="url" value="http://maven.ufgov.com.cn/nexus/content/groups/product-license/" />
@@ -95,11 +85,6 @@
       <option name="id" value="nexus" />
       <option name="name" value="Nexus" />
       <option name="url" value="http://maven.yonyou.com/nexus/repository/public/" />
-=======
-      <option name="id" value="nexus" />
-      <option name="name" value="nexus" />
-      <option name="url" value="http://localhost:8081/nexus/content/groups/public/" />
->>>>>>> 8ff77cf1d054ba60f18fb17999d5ed90368edfe9
     </remote-repository>
   </component>
 </project>

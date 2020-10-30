@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/springboot01/demo.iml" filepath="$PROJECT_DIR$/springboot01/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot02/demo (1).iml" filepath="$PROJECT_DIR$/springboot02/demo (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/javabase.iml" filepath="$PROJECT_DIR$/javabase.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/springboot.iml" filepath="$PROJECT_DIR$/.idea/springboot.iml" />
-=======
       <module fileurl="file://$PROJECT_DIR$/javabase/javabase.iml" filepath="$PROJECT_DIR$/javabase/javabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabasenew/javabasenew.iml" filepath="$PROJECT_DIR$/javabasenew/javabasenew.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty/netty.iml" filepath="$PROJECT_DIR$/netty/netty.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot01/springboot01.iml" filepath="$PROJECT_DIR$/springboot01/springboot01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot02/springboot02.iml" filepath="$PROJECT_DIR$/springboot02/springboot02.iml" />
->>>>>>> 8ff77cf1d054ba60f18fb17999d5ed90368edfe9
     </modules>
   </component>
 </project>
