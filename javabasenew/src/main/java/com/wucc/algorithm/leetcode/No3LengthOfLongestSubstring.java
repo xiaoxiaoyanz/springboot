@@ -59,4 +59,23 @@ public class No3LengthOfLongestSubstring {
 		System.out.println(i);
 	}
 
+
+	public static int copyNo3(String s){
+		int length = s.length();
+		Set<Character> set = new HashSet<>();
+
+		int rk = -1 ,ans = 1;
+		for(int i = 0;i<length;i++){
+			if(i != 0){
+				set.remove(s.charAt(i - 1));
+			}
+			while (rk + 1<length&&!set.contains(s.charAt(rk+1))){
+				set.add(s.charAt(rk + 1));
+				++rk;
+			}
+			ans = Math.max(ans, rk - i + 1);
+		}
+		return ans;
+	}
+
 }
