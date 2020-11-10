@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wucc</groupId>
+    <artifactId>mavencc</artifactId>
+    <version>1.0</version>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <!--<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.2.1.RELEASE</version>
+            &lt;!&ndash;<exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-core</artifactId>
+                </exclusion>
+            </exclusions>&ndash;&gt;
+        </dependency>-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.62</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.2.6.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+
+
+        <repositories>
+            <repository>
+                <id>maven-nexus</id>
+                <url>http://localhost:8081/repository/maven-public/</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+            </repository>
+          <!--  <repository>
+                <id>aliyun-releases</id>
+                <url>https://maven.aliyun.com/repository/public</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+            </repository>-->
+        </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>release-nexus</id>
+            <url>http://localhost:8081/repository/maven-releases/</url>
+            <name>nexus私服中宿主仓库->存放/下载稳定版本的构件</name>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot-nexus</id>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
+            <name>nexus私服中宿主仓库->存放/下载快照版本的构件</name>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                <!-- 使用插件需要执行的任务 -->
+                <execution>
+                    <!-- 任务id -->
+                    <id>attach-source</id>
+                    <!-- 任务中插件的目标，可以指定多个 -->
+                    <goals>
+                        <goal>jar-no-fork</goal>
+                    </goals>
+                    <!-- 绑定的阶段 -->
+                    <phase>verify</phase>
+                </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+
+</project>

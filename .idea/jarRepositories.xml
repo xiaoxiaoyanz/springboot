@@ -22,6 +22,11 @@
       <option name="url" value="http://maven.yonyou.com/nexus/repository/releases/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="myRepository2_2" />
       <option name="name" value="myRepository2_2" />
       <option name="url" value="http://maven.ufgov.com.cn/nexus/content/repositories/cw80/" />
@@ -35,6 +40,16 @@
       <option name="id" value="iUAP-Snapshots" />
       <option name="name" value="iUAP-Snapshots" />
       <option name="url" value="http://maven.yonyou.com/nexus/repository/iUAP-Snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-nexus" />
+      <option name="name" value="maven-nexus" />
+      <option name="url" value="http://localhost:8081/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="aliyun-releases" />
+      <option name="name" value="aliyun-releases" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="myRepository2_1" />
