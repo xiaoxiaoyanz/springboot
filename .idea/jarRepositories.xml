@@ -42,6 +42,7 @@
       <option name="url" value="http://maven.yonyou.com/nexus/repository/iUAP-Snapshots/" />
     </remote-repository>
     <remote-repository>
+<<<<<<< HEAD
       <option name="id" value="maven-nexus" />
       <option name="name" value="maven-nexus" />
       <option name="url" value="http://localhost:8081/repository/maven-public/" />
@@ -50,6 +51,11 @@
       <option name="id" value="aliyun-releases" />
       <option name="name" value="aliyun-releases" />
       <option name="url" value="https://maven.aliyun.com/repository/public" />
+=======
+      <option name="id" value="nexus" />
+      <option name="name" value="nexus" />
+      <option name="url" value="http://localhost:8081/nexus/content/groups/public/" />
+>>>>>>> 0cad16055e66bbc2d47c3da8cf53793f2f644d04
     </remote-repository>
     <remote-repository>
       <option name="id" value="myRepository2_1" />

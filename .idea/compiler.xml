@@ -8,18 +8,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mavencc" />
         <module name="javabasenew" />
+<<<<<<< HEAD
         <module name="demo (1)" />
         <module name="maven-h5" />
         <module name="maven-api" />
         <module name="maven-try" />
         <module name="demo" />
+=======
+        <module name="springboot02" />
+        <module name="springboot01" />
+>>>>>>> 0cad16055e66bbc2d47c3da8cf53793f2f644d04
         <module name="netty" />
         <module name="maven-pc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="demo" target="1.8" />
-      <module name="demo (1)" target="1.8" />
       <module name="javabasenew" target="8" />
       <module name="maven-aggregator" target="1.5" />
       <module name="maven-api" target="1.5" />
@@ -29,12 +32,14 @@
       <module name="maven-try" target="1.5" />
       <module name="mavencc" target="1.5" />
       <module name="netty" target="1.5" />
+      <module name="springboot01" target="1.8" />
+      <module name="springboot02" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="demo" options="-parameters" />
-      <module name="demo (1)" options="-parameters" />
+      <module name="springboot01" options="-parameters" />
+      <module name="springboot02" options="-parameters" />
     </option>
   </component>
 </project>
