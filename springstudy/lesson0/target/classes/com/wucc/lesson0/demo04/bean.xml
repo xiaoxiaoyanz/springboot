@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 定义一个bean id：bean的唯一标识，可以通过这个标识从容器中获取这个bean对象 clss：这个bean的类型，完整类名称 -->
+   <bean id="UserModel" class="com.wucc.lesson0.demo04.model.UserModel">
+       <constructor-arg index="0" value="zhangsan"/>
+       <constructor-arg index="1" value="123456"/>
+   </bean>
+
+    <!-- 通过构造参数名称-->
+    <bean id = "CardModel" class="com.wucc.lesson0.demo04.model.CardModel">
+        <constructor-arg name="name" value="zhangsan"/>
+        <constructor-arg name="desc" value="通过构造参数名称"/>
+    </bean>
+
+    <!--通过seter-->
+    <bean id="MenuModel" class="com.wucc.lesson0.demo04.model.MenuModel">
+        <property name="label" value="hahaha"/>
+    </bean>
+
+
+
+
+    <!--注入对象-->
+    <bean id="OrderModel01" class="com.wucc.lesson0.demo04.model.OrderModel">
+       <property name="userModel" ref="UserModel"/>
+       <property name="menuModel" ref="MenuModel"/>
+    </bean>
+
+    <bean id="OrderModel02" class="com.wucc.lesson0.demo04.model.OrderModel">
+        <property name="userModel" ref="UserModel"/>
+        <property name="menuModel" >
+            <bean class="com.wucc.lesson0.demo04.model.MenuModel">
+                <property name="label" value="hahahhahah2763478"/>
+                <property name="theSort" value="8799"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="OrderModel03" class="com.wucc.lesson0.demo04.model.OrderModel">
+         <constructor-arg index="0" ref="UserModel"/>
+         <constructor-arg index="1">
+             <bean class="com.wucc.lesson0.demo04.model.MenuModel">
+                 <constructor-arg index="0" value="hahahha78938934"/>
+             </bean>
+         </constructor-arg>
+    </bean>
+
+    <!--其他类型注入-->
+    <bean id="CollectionModel" class="com.wucc.lesson0.demo04.model.CollectionModel">
+        <property name="list1">
+            <list>
+                <value>list01</value>
+                <value>list02</value>
+                <value>list01</value>
+                <value>list01</value>
+                <value>list01</value>
+                <value>list01</value>
+            </list>
+        </property>
+        <property name="array1">
+            <array>
+                <value>78</value>
+                <value>78</value>
+                <value>78</value>
+                <value>78</value>
+                <value>78</value>
+                <value>78</value>
+                <value>78</value>
+            </array>
+        </property>
+        <property name="map1">
+            <map>
+                <entry key="ccbeign" value="0"/>
+                <entry key="ccend" value="89"/>
+            </map>
+        </property>
+        <property name="set1">
+            <set>
+                <ref bean="UserModel"/>
+                <ref bean="UserModel"/>
+                <ref bean="UserModel"/>
+            </set>
+        </property>
+        <property name="properties1">
+            <props>
+                <prop key="key01">kkkk01</prop>
+                <prop key="key02">kkkk02</prop>
+                <prop key="key03">kkkk03</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>

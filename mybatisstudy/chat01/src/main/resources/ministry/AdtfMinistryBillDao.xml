@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.AdtfMinistryBillDao">
+  <resultMap id="BaseResultMap" type="entity.AdtfMinistryBill">
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="VERSION" jdbcType="INTEGER" property="version" />
+    <result column="CODE" jdbcType="VARCHAR" property="code" />
+    <result column="TYPE" jdbcType="VARCHAR" property="type" />
+    <result column="RG_CODE" jdbcType="VARCHAR" property="rgCode" />
+    <result column="SET_YEAR" jdbcType="VARCHAR" property="setYear" />
+    <result column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="ORG_CODE" jdbcType="VARCHAR" property="orgCode" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="STATUS" jdbcType="CHAR" property="status" />
+    <result column="IS_EFFECT" jdbcType="CHAR" property="isEffect" />
+    <result column="ORG_TYPE_CODE" jdbcType="VARCHAR" property="orgTypeCode" />
+    <result column="ORG_TYPE_NAME" jdbcType="VARCHAR" property="orgTypeName" />
+    <result column="CENTRAL_DOC_NO_CODE" jdbcType="VARCHAR" property="centralDocNoCode" />
+    <result column="CENTRAL_DOC_NO_NAME" jdbcType="VARCHAR" property="centralDocNoName" />
+    <result column="DOC_TITLE" jdbcType="VARCHAR" property="docTitle" />
+    <result column="APPROPRIATE_TYPE_CODE" jdbcType="VARCHAR" property="appropriateTypeCode" />
+    <result column="APPROPRIATE_TYPE_NAME" jdbcType="VARCHAR" property="appropriateTypeName" />
+    <result column="DOC_THEME_WORD" jdbcType="VARCHAR" property="docThemeWord" />
+    <result column="RELEASE_AMOUNT" jdbcType="DECIMAL" property="releaseAmount" />
+    <result column="RELEASE_DOC_DATE" jdbcType="TIMESTAMP" property="releaseDocDate" />
+    <result column="RELEASE_DOC_ORG_CODE" jdbcType="VARCHAR" property="releaseDocOrgCode" />
+    <result column="RELEASE_DOC_ORG_NAME" jdbcType="VARCHAR" property="releaseDocOrgName" />
+    <result column="DOC_CONTENT_INTRODUCTION" jdbcType="VARCHAR" property="docContentIntroduction" />
+    <result column="AUDITOR_ID" jdbcType="VARCHAR" property="auditorId" />
+    <result column="AUDITOR" jdbcType="VARCHAR" property="auditor" />
+    <result column="AUDITORTIME" jdbcType="TIMESTAMP" property="auditortime" />
+    <result column="CREATOR_ID" jdbcType="VARCHAR" property="creatorId" />
+    <result column="CREATOR" jdbcType="VARCHAR" property="creator" />
+    <result column="CREATIONTIME" jdbcType="TIMESTAMP" property="creationtime" />
+    <result column="MODIFIER_ID" jdbcType="VARCHAR" property="modifierId" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFIEDTIME" jdbcType="TIMESTAMP" property="modifiedtime" />
+    <result column="REMARK" jdbcType="VARCHAR" property="remark" />
+    <result column="SYS_TYPE" jdbcType="VARCHAR" property="sysType" />
+    <result column="PUBLIC_NO_CODE" jdbcType="VARCHAR" property="publicNoCode" />
+    <result column="PUBLIC_NO_NAME" jdbcType="VARCHAR" property="publicNoName" />
+    <result column="FUNDS_YEAR" jdbcType="INTEGER" property="fundsYear" />
+    <result column="RELEASETHIS_AMOUNT" jdbcType="DECIMAL" property="releasethisAmount" />
+    <result column="RELEASED_AMOUNT" jdbcType="DECIMAL" property="releasedAmount" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID, VERSION, CODE, `TYPE`, RG_CODE, SET_YEAR, ORG_ID, ORG_CODE, ORG_NAME, `STATUS`, 
+    IS_EFFECT, ORG_TYPE_CODE, ORG_TYPE_NAME, CENTRAL_DOC_NO_CODE, CENTRAL_DOC_NO_NAME, 
+    DOC_TITLE, APPROPRIATE_TYPE_CODE, APPROPRIATE_TYPE_NAME, DOC_THEME_WORD, RELEASE_AMOUNT, 
+    RELEASE_DOC_DATE, RELEASE_DOC_ORG_CODE, RELEASE_DOC_ORG_NAME, DOC_CONTENT_INTRODUCTION, 
+    AUDITOR_ID, AUDITOR, AUDITORTIME, CREATOR_ID, CREATOR, CREATIONTIME, MODIFIER_ID, 
+    MODIFIER, MODIFIEDTIME, REMARK, SYS_TYPE, PUBLIC_NO_CODE, PUBLIC_NO_NAME, FUNDS_YEAR, 
+    RELEASETHIS_AMOUNT, RELEASED_AMOUNT
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from adtf_ministry_bill
+    where ID = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from adtf_ministry_bill
+    where ID = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="ID" keyProperty="id" parameterType="entity.AdtfMinistryBill" useGeneratedKeys="true">
+    insert into adtf_ministry_bill (VERSION, CODE, `TYPE`, 
+      RG_CODE, SET_YEAR, ORG_ID, 
+      ORG_CODE, ORG_NAME, `STATUS`, 
+      IS_EFFECT, ORG_TYPE_CODE, ORG_TYPE_NAME, 
+      CENTRAL_DOC_NO_CODE, CENTRAL_DOC_NO_NAME, DOC_TITLE, 
+      APPROPRIATE_TYPE_CODE, APPROPRIATE_TYPE_NAME, 
+      DOC_THEME_WORD, RELEASE_AMOUNT, RELEASE_DOC_DATE, 
+      RELEASE_DOC_ORG_CODE, RELEASE_DOC_ORG_NAME, DOC_CONTENT_INTRODUCTION, 
+      AUDITOR_ID, AUDITOR, AUDITORTIME, 
+      CREATOR_ID, CREATOR, CREATIONTIME, 
+      MODIFIER_ID, MODIFIER, MODIFIEDTIME, 
+      REMARK, SYS_TYPE, PUBLIC_NO_CODE, 
+      PUBLIC_NO_NAME, FUNDS_YEAR, RELEASETHIS_AMOUNT, 
+      RELEASED_AMOUNT)
+    values (#{version,jdbcType=INTEGER}, #{code,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
+      #{rgCode,jdbcType=VARCHAR}, #{setYear,jdbcType=VARCHAR}, #{orgId,jdbcType=VARCHAR}, 
+      #{orgCode,jdbcType=VARCHAR}, #{orgName,jdbcType=VARCHAR}, #{status,jdbcType=CHAR}, 
+      #{isEffect,jdbcType=CHAR}, #{orgTypeCode,jdbcType=VARCHAR}, #{orgTypeName,jdbcType=VARCHAR}, 
+      #{centralDocNoCode,jdbcType=VARCHAR}, #{centralDocNoName,jdbcType=VARCHAR}, #{docTitle,jdbcType=VARCHAR}, 
+      #{appropriateTypeCode,jdbcType=VARCHAR}, #{appropriateTypeName,jdbcType=VARCHAR}, 
+      #{docThemeWord,jdbcType=VARCHAR}, #{releaseAmount,jdbcType=DECIMAL}, #{releaseDocDate,jdbcType=TIMESTAMP}, 
+      #{releaseDocOrgCode,jdbcType=VARCHAR}, #{releaseDocOrgName,jdbcType=VARCHAR}, #{docContentIntroduction,jdbcType=VARCHAR}, 
+      #{auditorId,jdbcType=VARCHAR}, #{auditor,jdbcType=VARCHAR}, #{auditortime,jdbcType=TIMESTAMP}, 
+      #{creatorId,jdbcType=VARCHAR}, #{creator,jdbcType=VARCHAR}, #{creationtime,jdbcType=TIMESTAMP}, 
+      #{modifierId,jdbcType=VARCHAR}, #{modifier,jdbcType=VARCHAR}, #{modifiedtime,jdbcType=TIMESTAMP}, 
+      #{remark,jdbcType=VARCHAR}, #{sysType,jdbcType=VARCHAR}, #{publicNoCode,jdbcType=VARCHAR}, 
+      #{publicNoName,jdbcType=VARCHAR}, #{fundsYear,jdbcType=INTEGER}, #{releasethisAmount,jdbcType=DECIMAL}, 
+      #{releasedAmount,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" keyColumn="ID" keyProperty="id" parameterType="entity.AdtfMinistryBill" useGeneratedKeys="true">
+    insert into adtf_ministry_bill
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="version != null">
+        VERSION,
+      </if>
+      <if test="code != null">
+        CODE,
+      </if>
+      <if test="type != null">
+        `TYPE`,
+      </if>
+      <if test="rgCode != null">
+        RG_CODE,
+      </if>
+      <if test="setYear != null">
+        SET_YEAR,
+      </if>
+      <if test="orgId != null">
+        ORG_ID,
+      </if>
+      <if test="orgCode != null">
+        ORG_CODE,
+      </if>
+      <if test="orgName != null">
+        ORG_NAME,
+      </if>
+      <if test="status != null">
+        `STATUS`,
+      </if>
+      <if test="isEffect != null">
+        IS_EFFECT,
+      </if>
+      <if test="orgTypeCode != null">
+        ORG_TYPE_CODE,
+      </if>
+      <if test="orgTypeName != null">
+        ORG_TYPE_NAME,
+      </if>
+      <if test="centralDocNoCode != null">
+        CENTRAL_DOC_NO_CODE,
+      </if>
+      <if test="centralDocNoName != null">
+        CENTRAL_DOC_NO_NAME,
+      </if>
+      <if test="docTitle != null">
+        DOC_TITLE,
+      </if>
+      <if test="appropriateTypeCode != null">
+        APPROPRIATE_TYPE_CODE,
+      </if>
+      <if test="appropriateTypeName != null">
+        APPROPRIATE_TYPE_NAME,
+      </if>
+      <if test="docThemeWord != null">
+        DOC_THEME_WORD,
+      </if>
+      <if test="releaseAmount != null">
+        RELEASE_AMOUNT,
+      </if>
+      <if test="releaseDocDate != null">
+        RELEASE_DOC_DATE,
+      </if>
+      <if test="releaseDocOrgCode != null">
+        RELEASE_DOC_ORG_CODE,
+      </if>
+      <if test="releaseDocOrgName != null">
+        RELEASE_DOC_ORG_NAME,
+      </if>
+      <if test="docContentIntroduction != null">
+        DOC_CONTENT_INTRODUCTION,
+      </if>
+      <if test="auditorId != null">
+        AUDITOR_ID,
+      </if>
+      <if test="auditor != null">
+        AUDITOR,
+      </if>
+      <if test="auditortime != null">
+        AUDITORTIME,
+      </if>
+      <if test="creatorId != null">
+        CREATOR_ID,
+      </if>
+      <if test="creator != null">
+        CREATOR,
+      </if>
+      <if test="creationtime != null">
+        CREATIONTIME,
+      </if>
+      <if test="modifierId != null">
+        MODIFIER_ID,
+      </if>
+      <if test="modifier != null">
+        MODIFIER,
+      </if>
+      <if test="modifiedtime != null">
+        MODIFIEDTIME,
+      </if>
+      <if test="remark != null">
+        REMARK,
+      </if>
+      <if test="sysType != null">
+        SYS_TYPE,
+      </if>
+      <if test="publicNoCode != null">
+        PUBLIC_NO_CODE,
+      </if>
+      <if test="publicNoName != null">
+        PUBLIC_NO_NAME,
+      </if>
+      <if test="fundsYear != null">
+        FUNDS_YEAR,
+      </if>
+      <if test="releasethisAmount != null">
+        RELEASETHIS_AMOUNT,
+      </if>
+      <if test="releasedAmount != null">
+        RELEASED_AMOUNT,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="version != null">
+        #{version,jdbcType=INTEGER},
+      </if>
+      <if test="code != null">
+        #{code,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="rgCode != null">
+        #{rgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="setYear != null">
+        #{setYear,jdbcType=VARCHAR},
+      </if>
+      <if test="orgId != null">
+        #{orgId,jdbcType=VARCHAR},
+      </if>
+      <if test="orgCode != null">
+        #{orgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="orgName != null">
+        #{orgName,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=CHAR},
+      </if>
+      <if test="isEffect != null">
+        #{isEffect,jdbcType=CHAR},
+      </if>
+      <if test="orgTypeCode != null">
+        #{orgTypeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="orgTypeName != null">
+        #{orgTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="centralDocNoCode != null">
+        #{centralDocNoCode,jdbcType=VARCHAR},
+      </if>
+      <if test="centralDocNoName != null">
+        #{centralDocNoName,jdbcType=VARCHAR},
+      </if>
+      <if test="docTitle != null">
+        #{docTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="appropriateTypeCode != null">
+        #{appropriateTypeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="appropriateTypeName != null">
+        #{appropriateTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="docThemeWord != null">
+        #{docThemeWord,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseAmount != null">
+        #{releaseAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="releaseDocDate != null">
+        #{releaseDocDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="releaseDocOrgCode != null">
+        #{releaseDocOrgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseDocOrgName != null">
+        #{releaseDocOrgName,jdbcType=VARCHAR},
+      </if>
+      <if test="docContentIntroduction != null">
+        #{docContentIntroduction,jdbcType=VARCHAR},
+      </if>
+      <if test="auditorId != null">
+        #{auditorId,jdbcType=VARCHAR},
+      </if>
+      <if test="auditor != null">
+        #{auditor,jdbcType=VARCHAR},
+      </if>
+      <if test="auditortime != null">
+        #{auditortime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="creatorId != null">
+        #{creatorId,jdbcType=VARCHAR},
+      </if>
+      <if test="creator != null">
+        #{creator,jdbcType=VARCHAR},
+      </if>
+      <if test="creationtime != null">
+        #{creationtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifierId != null">
+        #{modifierId,jdbcType=VARCHAR},
+      </if>
+      <if test="modifier != null">
+        #{modifier,jdbcType=VARCHAR},
+      </if>
+      <if test="modifiedtime != null">
+        #{modifiedtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="sysType != null">
+        #{sysType,jdbcType=VARCHAR},
+      </if>
+      <if test="publicNoCode != null">
+        #{publicNoCode,jdbcType=VARCHAR},
+      </if>
+      <if test="publicNoName != null">
+        #{publicNoName,jdbcType=VARCHAR},
+      </if>
+      <if test="fundsYear != null">
+        #{fundsYear,jdbcType=INTEGER},
+      </if>
+      <if test="releasethisAmount != null">
+        #{releasethisAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="releasedAmount != null">
+        #{releasedAmount,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.AdtfMinistryBill">
+    update adtf_ministry_bill
+    <set>
+      <if test="version != null">
+        VERSION = #{version,jdbcType=INTEGER},
+      </if>
+      <if test="code != null">
+        CODE = #{code,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        `TYPE` = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="rgCode != null">
+        RG_CODE = #{rgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="setYear != null">
+        SET_YEAR = #{setYear,jdbcType=VARCHAR},
+      </if>
+      <if test="orgId != null">
+        ORG_ID = #{orgId,jdbcType=VARCHAR},
+      </if>
+      <if test="orgCode != null">
+        ORG_CODE = #{orgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="orgName != null">
+        ORG_NAME = #{orgName,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        `STATUS` = #{status,jdbcType=CHAR},
+      </if>
+      <if test="isEffect != null">
+        IS_EFFECT = #{isEffect,jdbcType=CHAR},
+      </if>
+      <if test="orgTypeCode != null">
+        ORG_TYPE_CODE = #{orgTypeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="orgTypeName != null">
+        ORG_TYPE_NAME = #{orgTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="centralDocNoCode != null">
+        CENTRAL_DOC_NO_CODE = #{centralDocNoCode,jdbcType=VARCHAR},
+      </if>
+      <if test="centralDocNoName != null">
+        CENTRAL_DOC_NO_NAME = #{centralDocNoName,jdbcType=VARCHAR},
+      </if>
+      <if test="docTitle != null">
+        DOC_TITLE = #{docTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="appropriateTypeCode != null">
+        APPROPRIATE_TYPE_CODE = #{appropriateTypeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="appropriateTypeName != null">
+        APPROPRIATE_TYPE_NAME = #{appropriateTypeName,jdbcType=VARCHAR},
+      </if>
+      <if test="docThemeWord != null">
+        DOC_THEME_WORD = #{docThemeWord,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseAmount != null">
+        RELEASE_AMOUNT = #{releaseAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="releaseDocDate != null">
+        RELEASE_DOC_DATE = #{releaseDocDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="releaseDocOrgCode != null">
+        RELEASE_DOC_ORG_CODE = #{releaseDocOrgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseDocOrgName != null">
+        RELEASE_DOC_ORG_NAME = #{releaseDocOrgName,jdbcType=VARCHAR},
+      </if>
+      <if test="docContentIntroduction != null">
+        DOC_CONTENT_INTRODUCTION = #{docContentIntroduction,jdbcType=VARCHAR},
+      </if>
+      <if test="auditorId != null">
+        AUDITOR_ID = #{auditorId,jdbcType=VARCHAR},
+      </if>
+      <if test="auditor != null">
+        AUDITOR = #{auditor,jdbcType=VARCHAR},
+      </if>
+      <if test="auditortime != null">
+        AUDITORTIME = #{auditortime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="creatorId != null">
+        CREATOR_ID = #{creatorId,jdbcType=VARCHAR},
+      </if>
+      <if test="creator != null">
+        CREATOR = #{creator,jdbcType=VARCHAR},
+      </if>
+      <if test="creationtime != null">
+        CREATIONTIME = #{creationtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifierId != null">
+        MODIFIER_ID = #{modifierId,jdbcType=VARCHAR},
+      </if>
+      <if test="modifier != null">
+        MODIFIER = #{modifier,jdbcType=VARCHAR},
+      </if>
+      <if test="modifiedtime != null">
+        MODIFIEDTIME = #{modifiedtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        REMARK = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="sysType != null">
+        SYS_TYPE = #{sysType,jdbcType=VARCHAR},
+      </if>
+      <if test="publicNoCode != null">
+        PUBLIC_NO_CODE = #{publicNoCode,jdbcType=VARCHAR},
+      </if>
+      <if test="publicNoName != null">
+        PUBLIC_NO_NAME = #{publicNoName,jdbcType=VARCHAR},
+      </if>
+      <if test="fundsYear != null">
+        FUNDS_YEAR = #{fundsYear,jdbcType=INTEGER},
+      </if>
+      <if test="releasethisAmount != null">
+        RELEASETHIS_AMOUNT = #{releasethisAmount,jdbcType=DECIMAL},
+      </if>
+      <if test="releasedAmount != null">
+        RELEASED_AMOUNT = #{releasedAmount,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.AdtfMinistryBill">
+    update adtf_ministry_bill
+    set VERSION = #{version,jdbcType=INTEGER},
+      CODE = #{code,jdbcType=VARCHAR},
+      `TYPE` = #{type,jdbcType=VARCHAR},
+      RG_CODE = #{rgCode,jdbcType=VARCHAR},
+      SET_YEAR = #{setYear,jdbcType=VARCHAR},
+      ORG_ID = #{orgId,jdbcType=VARCHAR},
+      ORG_CODE = #{orgCode,jdbcType=VARCHAR},
+      ORG_NAME = #{orgName,jdbcType=VARCHAR},
+      `STATUS` = #{status,jdbcType=CHAR},
+      IS_EFFECT = #{isEffect,jdbcType=CHAR},
+      ORG_TYPE_CODE = #{orgTypeCode,jdbcType=VARCHAR},
+      ORG_TYPE_NAME = #{orgTypeName,jdbcType=VARCHAR},
+      CENTRAL_DOC_NO_CODE = #{centralDocNoCode,jdbcType=VARCHAR},
+      CENTRAL_DOC_NO_NAME = #{centralDocNoName,jdbcType=VARCHAR},
+      DOC_TITLE = #{docTitle,jdbcType=VARCHAR},
+      APPROPRIATE_TYPE_CODE = #{appropriateTypeCode,jdbcType=VARCHAR},
+      APPROPRIATE_TYPE_NAME = #{appropriateTypeName,jdbcType=VARCHAR},
+      DOC_THEME_WORD = #{docThemeWord,jdbcType=VARCHAR},
+      RELEASE_AMOUNT = #{releaseAmount,jdbcType=DECIMAL},
+      RELEASE_DOC_DATE = #{releaseDocDate,jdbcType=TIMESTAMP},
+      RELEASE_DOC_ORG_CODE = #{releaseDocOrgCode,jdbcType=VARCHAR},
+      RELEASE_DOC_ORG_NAME = #{releaseDocOrgName,jdbcType=VARCHAR},
+      DOC_CONTENT_INTRODUCTION = #{docContentIntroduction,jdbcType=VARCHAR},
+      AUDITOR_ID = #{auditorId,jdbcType=VARCHAR},
+      AUDITOR = #{auditor,jdbcType=VARCHAR},
+      AUDITORTIME = #{auditortime,jdbcType=TIMESTAMP},
+      CREATOR_ID = #{creatorId,jdbcType=VARCHAR},
+      CREATOR = #{creator,jdbcType=VARCHAR},
+      CREATIONTIME = #{creationtime,jdbcType=TIMESTAMP},
+      MODIFIER_ID = #{modifierId,jdbcType=VARCHAR},
+      MODIFIER = #{modifier,jdbcType=VARCHAR},
+      MODIFIEDTIME = #{modifiedtime,jdbcType=TIMESTAMP},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      SYS_TYPE = #{sysType,jdbcType=VARCHAR},
+      PUBLIC_NO_CODE = #{publicNoCode,jdbcType=VARCHAR},
+      PUBLIC_NO_NAME = #{publicNoName,jdbcType=VARCHAR},
+      FUNDS_YEAR = #{fundsYear,jdbcType=INTEGER},
+      RELEASETHIS_AMOUNT = #{releasethisAmount,jdbcType=DECIMAL},
+      RELEASED_AMOUNT = #{releasedAmount,jdbcType=DECIMAL}
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -3,8 +3,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/springboot01/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot02/pom.xml" />
         <option value="$PROJECT_DIR$/netty/pom.xml" />
         <option value="$PROJECT_DIR$/javabasenew/pom.xml" />
         <option value="$PROJECT_DIR$/mavencc/pom.xml" />
@@ -14,6 +12,11 @@
         <option value="$PROJECT_DIR$/maven-api/pom.xml" />
         <option value="$PROJECT_DIR$/maven-aggregator/pom.xml" />
         <option value="$PROJECT_DIR$/maven-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/pom.xml" />
+        <option value="$PROJECT_DIR$/springstudy/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatisstudy/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot01/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot02/pom.xml" />
       </list>
     </option>
   </component>

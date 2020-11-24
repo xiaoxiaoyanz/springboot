@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 定义一个bean id：bean的唯一标识，可以通过这个标识从容器中获取这个bean对象 clss：这个bean的类型，完整类名称 -->
+    <bean id="helloworld" class="com.wucc.lesson0.demo01.HelloWorld">
+
+    </bean>
+    <alias name="helloworld" alias="helloWorld01"/>
+
+
+    <bean id="c1" class="com.wucc.lesson0.demo01.Man">
+    </bean>
+
+    <bean id="c2" name="c2" class="com.wucc.lesson0.demo01.Man">
+        <constructor-arg index="0" value="有参" />
+        <constructor-arg index="1" value="40"/>
+    </bean>
+
+    <bean id="manFactoryBean" class="com.wucc.lesson0.demo01.ManFactoryBean">
+
+    </bean>
+    <bean id="scopeTest" class="com.wucc.lesson0.demo02.BeanScopeModel" scope="singleton">
+        <constructor-arg index="0" value="singleton"/>
+    </bean>
+</beans>

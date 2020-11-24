@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mybatisstudy/chat01/chat01.iml" filepath="$PROJECT_DIR$/mybatisstudy/chat01/chat01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot01/demo.iml" filepath="$PROJECT_DIR$/springboot01/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot02/demo (1).iml" filepath="$PROJECT_DIR$/springboot02/demo (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/javabasenew/javabasenew.iml" filepath="$PROJECT_DIR$/javabasenew/javabasenew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springstudy/lesson0/lesson0.iml" filepath="$PROJECT_DIR$/springstudy/lesson0/lesson0.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-aggregator/maven-aggregator.iml" filepath="$PROJECT_DIR$/maven-aggregator/maven-aggregator.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-api/maven-api.iml" filepath="$PROJECT_DIR$/maven-api/maven-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-h5/maven-h5.iml" filepath="$PROJECT_DIR$/maven-h5/maven-h5.iml" />
@@ -10,9 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/maven-pc/maven-pc.iml" filepath="$PROJECT_DIR$/maven-pc/maven-pc.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-try/maven-try.iml" filepath="$PROJECT_DIR$/maven-try/maven-try.iml" />
       <module fileurl="file://$PROJECT_DIR$/mavencc/mavencc.iml" filepath="$PROJECT_DIR$/mavencc/mavencc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisstudy/mybatisstudy.iml" filepath="$PROJECT_DIR$/mybatisstudy/mybatisstudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty/netty.iml" filepath="$PROJECT_DIR$/netty/netty.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot01/springboot01.iml" filepath="$PROJECT_DIR$/springboot01/springboot01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot02/springboot02.iml" filepath="$PROJECT_DIR$/springboot02/springboot02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springstudy/springstudy.iml" filepath="$PROJECT_DIR$/springstudy/springstudy.iml" />
     </modules>
   </component>
 </project>
