@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.jms.annotation.EnableJms;
 import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 import org.springframework.jms.config.JmsListenerContainerFactory;
@@ -23,6 +24,7 @@ import javax.jms.Topic;
 @EnableScheduling    //开启定时任务
 @EnableAsync   //开启异步任务
 @EnableJms
+@ComponentScan
 public class DemoApplication {
 
     @Bean
